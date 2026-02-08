@@ -1,4 +1,12 @@
-import Contact from "../models/contact.model.js";
+import { fileURLToPath } from 'url';
+import { dirname, join } from 'path';
+
+// текущая директория этого файла
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+
+// импорт модели относительно текущей директории
+import Contact from join(__dirname, '../models/contact.model.js');
 
 export const createContact = async (req, res) => {
   try {
