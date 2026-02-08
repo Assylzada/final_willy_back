@@ -34,7 +34,7 @@ app.use("/api/orders", orderRoutes);
 app.use("/api/subscribe", subRoutes);
 
 // ================== Frontend ==================
-const frontendPath = path.join(__dirname, "frontend");
+const frontendPath = path.join(__dirname);
 
 // Раздаём ВСЕ HTML, CSS, JS, MP3 автоматически
 app.use(express.static(frontendPath));
