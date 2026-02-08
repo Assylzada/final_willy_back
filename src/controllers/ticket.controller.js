@@ -1,5 +1,5 @@
 // src/controllers/ticket.controller.js
-import Ticket from "../models/Ticket.model.js";
+import Ticket from "../models/ticket.model.js";
 
 export const createTicket = async (req, res) => {
   await Ticket.create(req.body);
